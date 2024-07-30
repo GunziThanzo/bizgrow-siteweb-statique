@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "bfRdUtV6dmqLTb9pf",
+          });
+      })();
+    </script>
+
+  </head>
+
+
+
+  <body>
+    <nav  class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a  href="/" >Accueil</a>
+            </li>
+            <li>
+              <a href="#">Programmes</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+            <div>
+              <a class="btn btn-primary" href="#"> Commencer </a>
+            </div>
+          </ul>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="#">Programmes</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="btn  btn-primary" href="#"> Commencer </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero-contact -->
+    <section class="hero-contact">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-heading text-xxl">
+            Nous contacter
+          </h1>
+          <p class="hero-text">
+            Nous aidons les entreprises à croître et à prospérer grâce 
+            à des stratégies innovantes et personnalisées. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <img  src="images/contact-image.png" alt="logo" />
+
+          <div class="card bg-light">
+            <div  >
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom complet" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" rows="12" name="message" placeholder="Votre message" required></textarea>
+
+              <button type="submit" onclick="sendMail()" class="btn btn-primary btn-block">
+                Envoyer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+ 
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15930.966933720108!2d29.8976129!3d-3.4130072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c1457d4774f8a9%3A0x174d2eacd1abd6fc!2sPAEEJ!5e0!3m2!1sen!2sbi!4v1722092871362!5m2!1sen!2sbi" 
+          width=100% 
+          height="600" 
+          style="border:0; border-radius: 10px; margin-top: 20px" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+      </div>
+    </section>
+
+
+
+
+    <!-- FAQ -->
+    <section class="faq bg-white">
+      <div class="container-sm">
+        <h3 class="faq-header text-xl text-center">Frequently Asked Questions</h3>
+
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the contact management feature help me keep track of
+                clients and partners?
+              </h4>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="faq-group-body open">
+              <p>
+                Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I customize the dashboards and reporting feature to display
+                the metrics that are most important to my business?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                culpa enim blanditiis rem ipsum aliquam, unde iste fugit
+                praesentium eos?
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the task management feature help me delegate tasks to
+                my team and track progress?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt, a! Quaerat, voluptatum. Animi molestias ex quasi
+                explicabo minima perferendis commodi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I collaborate with my team in real-time using all tools?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">Is the app available on all devices?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the app help me stay compliant when working with
+                freelancers and contractors?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black">
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo-white.png" alt="logo" />
+        </a>
+        <div class="footer-grid">
+          <div>
+            <div class="card">
+              <h4>S’inscrire a notre<br/> newsletter</h4>
+
+              <form>
+                <input type="email" id="email" placeholder="Votre adresse email" />
+                <button type="submit" class="btn btn-primary btn-block">
+                  S'inscrire
+                </button>
+              </form>
+
+            </div>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+
+          <div >
+            <h3>Entreprise</h3>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Notre processus</a></li>
+              <li><a href="#">Rejoindre l'equipe</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Liens utiles</h3>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Programmes</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <a href="#">info@bizgrow.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
