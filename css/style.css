@@ -550,16 +550,19 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  z-index: 1000;
+  z-index: 999;
+  overflow: auto;
   
 }
 
+
+
 .video-style {
+  display: none;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 
   0 -4px 6px rgba(0, 0, 0, 0.3);
-  overflow: hidden
+
 }
 
 video:focus {

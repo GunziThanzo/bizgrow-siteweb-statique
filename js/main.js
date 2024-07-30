@@ -56,21 +56,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //Video
-let videoPlayer = document.getElementById("videoPlayer");
-let myVideo = document.getElementById("myVideo");
+function playVideo() {
+  var videoPlayer = document.querySelector(".video-style");
+  var video = document.getElementById("myVideo"); // Correctly get the video element
+
+  videoPlayer.style.display = "block"; // Show the video player
+  video.currentTime = 0; // Reset to the beginning
+  video.muted = false; // Unmute the video
+  video.play();
+}
 
 function stopVideo() {
-    videoPlayer.style.display = "none";
-    myVideo.pause(); // Pause the video
-    myVideo.currentTime = 0; // Reset the video to the beginning
-}
+  var videoPlayer = document.querySelector(".video-style");
+  var video = document.getElementById("myVideo"); // Correctly get the video element
 
-function playVideo() {
-    videoPlayer.style.display = "block";
-    myVideo.currentTime = 0; // Reset the video to the beginning
-    myVideo.play(); // Start playing the video
+  videoPlayer.style.display = "none"; // Hide the video player
+  video.pause(); // Pause the video
+  video.currentTime = 0; // Reset to the beginning
+  video.muted = true; // Mute the video
 }
-
 
 //Email
 
