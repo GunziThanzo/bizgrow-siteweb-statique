@@ -545,23 +545,16 @@ img {
 
 /* Video*/
 .video-player {
-  width: 80%;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
+  width: 85%;
+  position: relative;
   overflow: auto;
   
 }
 
 
-
 .video-style {
-  display: none;
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 
-  0 -4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px
 
 }
 
@@ -569,18 +562,18 @@ video:focus {
   outline: none;
 }
 
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  cursor: pointer;
-}
 
 /* Media Queries */
 @media (max-width: 960px) {
   .text-xxl {
     font-size: 2.5rem;
+  }
+
+  .video-player {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    
   }
 }
 
@@ -617,6 +610,13 @@ video:focus {
     margin-bottom: 20px;
     display: block;
     width: 100%;
+  }
+
+  .video-player {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    
   }
 
   .contact-grid img {
@@ -659,5 +659,12 @@ video:focus {
 @media (max-width: 500px) {
   .text-xxl {
     font-size: 2rem;
+  }
+
+   .video-player {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    
   }
 }

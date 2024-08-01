@@ -55,26 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 });
 
-//Video
-function playVideo() {
-  var videoPlayer = document.querySelector(".video-style");
-  var video = document.getElementById("myVideo"); // Correctly get the video element
 
-  videoPlayer.style.display = "block"; // Show the video player
-  video.currentTime = 0; // Reset to the beginning
-  video.muted = false; // Unmute the video
-  video.play();
-}
-
-function stopVideo() {
-  var videoPlayer = document.querySelector(".video-style");
-  var video = document.getElementById("myVideo"); // Correctly get the video element
-
-  videoPlayer.style.display = "none"; // Hide the video player
-  video.pause(); // Pause the video
-  video.currentTime = 0; // Reset to the beginning
-  video.muted = true; // Mute the video
-}
 
 //Email
 
